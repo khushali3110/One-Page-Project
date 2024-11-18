@@ -1,0 +1,162 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #f0f2f5;
+    line-height: 1.6;
+}
+
+h1{
+    color: #3a506b;
+    display: flex-end;
+}
+
+/* Header */
+header {
+    background-color: #3a506b;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1.2rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #ffb703;
+}
+
+/* Section Layout */
+section {
+    padding: 3rem 1.5rem;
+    max-width: 800px;
+    margin: 2rem auto;
+    background: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    animation: fadeIn 0.8s ease-out;
+}
+
+section h2 {
+    color: #3a506b;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    border-bottom: 3px solid #ffb703;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* About Section */
+#about p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #666;
+    margin-top: 1rem;
+    line-height: 1.8;
+}
+
+/* Skills */
+#skills ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+#skills li {
+    background-color: #ffb703;
+    padding: 0.8rem 1.2rem;
+    border-radius: 8px;
+    font-weight: bold;
+    color: #fff;
+    transition: transform 0.3s ease;
+}
+
+#skills li:hover {
+    transform: scale(1.1);
+}
+
+/* Projects Section */
+.project {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.project h3 {
+    margin-bottom: 0.8rem;
+    color: #3a506b;
+}
+
+.project p {
+    color: #555;
+}
+
+/* Contact Section */
+#contact p {
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 1rem 0;
+}
+
+#contact a {
+    color: #3a506b;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#contact a:hover {
+    color: #ffb703;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #3a506b;
+    color: #fff;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
