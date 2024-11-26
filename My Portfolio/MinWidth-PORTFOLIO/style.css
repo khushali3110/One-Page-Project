@@ -1,0 +1,229 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'poppins', 'sans-serif';
+}
+
+body {
+    color: #fff;
+    width: 100vh;
+    background-color: #081b29;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 30px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+.navbar a {
+    font-size: 28px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 0.2s;
+    font-style: normal;
+    position: sticky;
+    background-color: transparent;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: lightseagreen;
+}
+
+.home {
+    height: 100vh;
+    width: 100vw;
+    /* background:url(./images.jpeg) no-repeat; */
+
+
+    background-color: #081b29;
+    background-size: fill;
+    background-position: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-content {
+    /* background-color: yellowgreen; */
+    max-width: 600px;
+}
+
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 400;
+    font-family: sans-serif;
+    line-height: 1.3;
+}
+
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: lightseagreen;
+    font-family: sans-serif;
+}
+
+.home-content p {
+    font-size: 25px;
+    margin: 20px 0 40px;
+
+}
+
+.home-content .btn-box {
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: lightseagreen;
+    border: 2px solid lightseagreen;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-box a:nth-child(2) {
+    background: transparent;
+    color: lightseagreen;
+}
+
+.btn-box a:nth-child(2):hover {
+    background: transparent;
+    color: lightseagreen;
+
+}
+
+.btn-box a:nth-child(2)::before {
+    color: lightseagreen;
+}
+
+
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(lightseagreen, #081b29);
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box a:hover::before {
+    width: 100%;
+}
+
+.home-sci {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid lightseagreen;
+    border-radius: 50%;
+    font-size: 20px;
+    color: lightseagreen;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(lightseagreen, #081b29);
+    z-index: -1;
+    transition: .5s;
+}
+
+.home-sci a:hover::before {
+    width: 100%;
+}
+
+.image img {
+    width: 450px;
+    height: 500px;
+    border-radius: 50%;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+@media (min-width:600px) {
+
+    .logo {
+        color: lightseagreen;
+    }
+
+    .navbar:hover {
+        color:  white;
+    }
+}
+
+@media (min-width:1000px) {
+    .home-content p{
+        opacity: 70%;
+        font-family: monospace;
+    }
+
+    .home-content h1{
+        font-family: fantasy;
+    }
+
+    .home-content h3{
+        color: lightslategrey;
+        
+    }
+   
+    
+}
