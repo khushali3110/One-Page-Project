@@ -33,7 +33,7 @@ header h1 {
 }
 
 header p {
-    font-size: 1.2rem;
+    font-size: 20px;
     font-style: italic;
     margin-bottom: 1.5rem;
 }
@@ -44,6 +44,7 @@ header nav a {
     margin: 0 1.2rem;
     font-weight: 500;
     transition: color 0.3s ease;
+    font-size: 25px;
 }
 
 header nav a:hover {
@@ -159,4 +160,26 @@ footer {
     color: #fff;
     font-size: 0.9rem;
     margin-top: 2rem;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-family: serif;
+}
+
+@media(min-width:1100px) {
+
+    body {
+        background: linear-gradient(45deg, #e5aac3, #430128);
+    }
+
+    header{
+        background: linear-gradient(#301a1a, #c66090);
+        color: #fff;
+    }
+
+    footer{
+        background: linear-gradient(#301a1a, #c66090);
+    }
 }
